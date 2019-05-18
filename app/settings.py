@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -126,3 +127,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 SITE_ID = 1
 ACCOUNT_ADAPTER = 'app.users.adapter.MyAccountAdapter'
+DISCORD_SCOPES = ['email', 'identify', 'connections', 'guilds', 'messages.read']
