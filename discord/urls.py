@@ -1,4 +1,4 @@
-from allauth.socialaccount.providers.discord.provider import DiscordProvider
+from .provider import DiscordProvider
 from allauth.socialaccount.providers.oauth2.urls import default_urlpatterns
 
 
